@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #0f0f0f;
+    background: radial-gradient(circle at top, #1a1a1a, #0a0a0a);
     color: white;
     margin: 0;
     padding: 20px;
@@ -9,22 +9,81 @@ body {
 h1 {
     text-align: center;
     color: #00ff99;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
 
+/* CARD */
 .promo {
-    background: #1c1c1c;
-    padding: 15px;
-    margin: 10px auto;
-    border-radius: 10px;
-    max-width: 500px;
+    background: linear-gradient(145deg, #1c1c1c, #141414);
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 15px;
+    max-width: 520px;
+    box-shadow: 0 0 15px rgba(0, 255, 153, 0.1);
+    transition: 0.2s ease;
 }
 
+/* efeito hover */
+.promo:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 255, 153, 0.25);
+}
+
+/* título do jogo */
+.promo h2 {
+    margin: 0 0 10px 0;
+    color: #ffffff;
+}
+
+/* preço */
 .price {
     color: #00ff99;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
+/* link botão */
 a {
-    color: #00aaff;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #00ff99;
+    color: #000;
+    border-radius: 8px;
     text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+a:hover {
+    background: #00cc77;
+}
+
+.form {
+    max-width: 520px;
+    margin: 0 auto 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #00ff99;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00cc77;
 }
